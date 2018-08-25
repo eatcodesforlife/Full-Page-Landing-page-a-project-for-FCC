@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta http-equiv="X-UA-Compatible" content = "ie-edge">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+<link rel='stylesheet' href='css/style.css'>
+<body>
+  <div class = 'page-wrapper'><!--page-wrapper div -->
+    <header id='header'>
+      <nav id='nav-bar' class='navbar'>
+        <span class='open-slide'>
+          <a href='#'>
+            <svg width='30' height='30' onclick='openSlideMenu()'>
+             <path d='M0, 5 30,5' stroke='#000000' stroke-width='5'/>
+             <path d='M0, 14 30,14' stroke='#000000' stroke-width='5'/>
+             <path d='M0, 23 30,23' stroke='#000000' stroke-width='5'/>
+            </svg>
+          </a>
+        </span>
+        <ul>
+          <li><a href='#showcase' class='nav-link'>Home</a></li>
+          <li><a href='#about' class='nav-link'>About</a></li>
+          <li><a href='#video' class='nav-link'>Preview</a></li>
+          <li><a href='#pricing' class='nav-link'>Serve me</a></li>
+        </ul>
+        <div class ='logo'><!-- logo div -->
+        <a href='#showcase'><img src='https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Coffee-PNG/Coffee_Cup_PNG_Clipart_Vector.png?m=1434276735' id='header-img' alt ='logo image'/></a>
+      </div><!--logo div-->
+      </nav>
+
+      <div id='side-menu' class='side-nav'>
+        <a href='#' onclick='closeSlideMenu()' class='btn-close'>&times;</a>
+        <a href='#showcase' onclick='closeSlideMenu()'>Home</a>
+        <a href='#about' onclick='closeSlideMenu()'>About</a>
+        <a href='#video' onclick='closeSlideMenu()'>Preview</a>
+        <a href='#pricing' onclick='closeSlideMenu()'>Serve Me</a>
+      </div>
+     </header>
+
+    <div id='showcase' class='subheader'>
+        <span class='slogan'>Caffeine here</span>
+        <h1 class='name'>Caffeine Shop</h1>
+    </div>
+    <div id='main'>
+    <div class='container'>
+      <section id='about'>
+        <div class='grid about-us'>
+          <div class='icon'>
+            <i class='fa fa-3x fa-wifi'></i>
+          </div>
+          <div class='desc'>
+            <h2>About us</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class='grid vision'>
+          <div class ='icon'>
+            <i class='fa fa-3x fa-heart-o'></i>
+          </div>
+          <div class='desc'>
+            <h2>Vision</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <div class='grid mission'>
+          <div class='icon'>
+            <i class='fa fa-3x fa-rocket'></i>
+          </div>
+          <div class='desc'>
+            <h2>Mission</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+      </section>
+      <section class='preview'>
+        <h2>Preview</h2>
+        <iframe id='video' height="315" src="https://media.istockphoto.com/videos/picking-up-coffee-video-id865287392" frameborder="0"  allowfullscreen></iframe>
+      </section>
+    </div>
+
+    <section id='pricing' class='pricing'>
+      <div id='tall'>
+        <span class='size'>
+          Tall
+        </span>
+        <h2>$20</h2>
+        <ol>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum.</li>
+        </ol>
+        <button class='btn'>Select</button>
+      </div>
+      <div id='grande'>
+        <span class='size'>
+          Grande
+        </span>
+        <h2>$25</h2>
+        <ol>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum.</li>
+        </ol>
+        <button class='btn'>Select</button>
+      </div>
+      <div id='venti'>
+        <span class='size'>
+          Venti
+        </span>
+        <h2>$30</h2>
+        <ol>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum.</li>
+          <li>Lorem ipsum.</li>
+        </ol>
+        <button class='btn'>Select</button>
+      </div>
+    </section>
+    <section id='promo'>
+      <h2>We email freebies and coupons! Want one?</h2>
+      <form id='form' action='https://www.freecodecamp.com/email-submit'>
+        <input type='text' name='name' id='name' placeholder='Name please' required/>
+        <input type='email' name='email' id='email' placeholder='Enter email here to receive coupon/s from us' required/>
+        <input type='submit' id='submit' class='btn' value='Yes, please!'></input>
+      </form>
+    </section>
+   </div><!--close #main div-->
+    <footer>
+      <ul>
+        <li><a href='#'>Privacy</a></li>
+        <li><a href='#'>Terms</a></li>
+        <li><a href='#'>Contact</a></li>
+      </ul>
+      <span>Coded for FCC by me!</span>
+      <span>Thanks to unsplash.com, yopriceville.com and istockphoto.com for the free images and video.</span>
+    </footer>
+  </div><!--page-wrapper div-->
+  <script src='js/sidemenu.js'></script>
+</body>
+</html>
